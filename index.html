@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianluca Angelo Estinto | Portfolio</title>
+
+    <style>
+        /* Reset di base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Layout generale */
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        #All {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #0011ff, #00aaff);
+            color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        /* Menu orizzontale */
+        nav {
+            margin-top: 12px;
+        }
+
+        .menu-orizzontale {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .menu-orizzontale li a {
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #000;
+            padding: 10px 16px;
+            border-radius: 6px;
+            background: rgba(255,255,255,0.8);
+            transition: 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+        }
+
+        .menu-orizzontale li a:hover {
+            background: #fff;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+        }
+
+        /* Main / contenuto */
+        main {
+            margin-top: 30px;
+            background: #fff;
+            padding: 24px 24px 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        section h2, section h3 {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        section p {
+            font-size: 0.98rem;
+            text-align: left;
+        }
+
+        /* Foto profilo */
+        section img {
+            display: block;
+            margin: 0 auto 16px;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        /* Progetti */
+        article {
+            margin-top: 12px;
+            padding: 12px 14px;
+            border-radius: 8px;
+            background: #fafafa;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+
+        article h3 {
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        article p {
+            font-size: 0.95rem;
+        }
+
+        /* Contatti */
+        #contatti {
+            max-width: 960px;
+            margin: 20px auto 0;
+            padding: 2px 16px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.914);
+        }
+
+        #contatti nav > li {
+            list-style: none;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        #contatti .menu-orizzontale {
+            justify-content: flex-start;
+        }
+
+        #contatti .menu-orizzontale li {
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        #footer {
+            max-width: 960px;
+            margin: 16px auto 0;
+        }
+
+        footer {
+            text-align: right;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            main {
+                padding: 18px;
+            }
+
+            .menu-orizzontale {
+                justify-content: center;
+            }
+
+            #contatti .menu-orizzontale {
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="All">
+        <header>
+            <h1>Gianluca Angelo Estinto</h1>
+            <p><b>Network Engineer | RAN Data Analyst</b></p>
+            <nav>
+                <ul class="menu-orizzontale">
+                    <li>
+                        <a href="C:\Users\gianl\Desktop\webapp\CV_Estinto_ITA.pdf">
+                            <b>CV Completo</b>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <img src="foto_mia.jpg" alt="Foto profilo di Gianluca">
+                <h2>Chi sono</h2>
+                <p>
+                    Network Engineer con esperienza nell’analisi dei dati, monitoring KPI e ottimizzazione
+                    delle performance della rete radiomobile.<br>
+                    In possesso di competenze in SQL, Python, Tableau, Microsoft Power BI e QGIS, focalizzato
+                    sull’analisi e visualizzazione dei dati per supporto decisioni strategiche e troubleshooting.<br>
+                    Approccio analitico, precisione e forte interesse per la Data Analytics, la Data Science e la
+                    Business Intelligence.
+                </p>
+            </section>
+
+            <section>
+                <h3>Esperienza Professionale</h3>
+
+                <article>
+                    <h3><i>ALTEN Italia SPA  </i></h3>
+                    <p>RAN Data Analyst</p>
+                    <h6>04/2023 - attuale</h6>
+                </article>
+
+                <article>
+                    <h3><i>Servizio Civile Nazionale  </i></h3>
+                    <p> Fondazione ETS AMESCI</p>
+                    <h6>2017-2018</h6>
+                </article>
+
+            </section>
+
+            <section>
+                <h3>Istruzione e Formazione</h3>
+
+                
+
+                <article>
+                    <h3><i>Corsi</i></h3>
+                    <ul>Python Essentials - OpenEDG Python Institute</ul>
+                    <h6>2026</h6>
+                    <ul>Introduzione SQL con MySQL e SQL Server - Accademia Domani</ul>
+                    <h6>2023</h6>
+                    <ul>Networking Essentials - Cisco Networking Academy</ul>
+                    <h6>2023</h6>
+                    <ul>NDG Linux Essentials - Cisco Networking Academy</ul>
+                    <h6>2023</h6>
+                    <ul>Help-Desk e CRM - GiGroup SPA & ITConsulting S.r.l.</ul>
+                    <h6>2023</h6>
+
+                </article>
+
+                <article>
+                    <h3><i>Laurea Triennale Ingegneria Informatica,Biomedica e Telecomunicazioni (L-8)</i></h3>
+                    <p>Università degli Studi di Napoli PARTHENOPE</p>
+                    <h6>2022</h6>
+                    <p>Tesi: <i>Studio di un bionsensore in fibra ottica per la misura della vitamina D</i></p>
+                </article>
+                
+            </section>
+
+            <section>
+                <h3>Progetti Personali</h3>
+
+                <article>
+                    <a href="geomaptunnel.png"><h3><i>GeoMap Tunnel</i></h3></a>
+                    
+                    <h6>2026</h6>
+                    <p>Mappa web interattiva basata su librerie Folium/Leaflet.js per supporto analisi dati GIS.</p>
+                </article>
+
+                <article>
+                    <a href="dataentry.png"><h3><i>Streamlit EasyForms</i></h3></a>
+                    
+                    <h6>2026</h6>
+                    <p>Tool web di data entry basato su framework Streamlit per registrazione task/attività.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <div id="contatti">
+        <nav>
+            <li><b>Contatti:</b></li>
+            <ul class="menu-orizzontale">
+                <li>📱 +393917583550</li>
+                <li>📧 gianluca.estinto@outlook.it</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <p>&copy; 2026 Gianluca Angelo Estinto</p>
+        </footer>
+    </div>
+
+</body>
+</html>
